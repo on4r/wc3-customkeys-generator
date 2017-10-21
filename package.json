@@ -1,0 +1,14 @@
+{
+  "name": "wc3-customkeys-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "createHeroes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "on4r",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^3.3.0"
+  }
+}
