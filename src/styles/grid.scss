@@ -1,0 +1,62 @@
+$grid-width: 360px;
+$border-width: 5px;
+
+#normal-grid {
+	margin-right: 50px;
+}
+
+.hotkey-el-container {
+
+	display: inline-block;
+	width: $grid-width;
+	//margin-left: -($grid-width/2);
+	color: white;
+
+	.hotkey-el {
+
+		position: relative;
+		float: left;
+		cursor: pointer;
+		width: 23%;
+		margin: 1%;
+		background: #e0e0e0; /* Old browsers */
+		background: -moz-linear-gradient(-45deg,  #e0e0e0 0%, #4c4c4a 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  #e0e0e0 0%,#4c4c4a 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  #e0e0e0 0%,#4c4c4a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#4c4c4a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+		&:before {
+
+			content: "";
+			display: block;
+			padding-top: 100%;
+
+		}
+
+		&:hover {
+
+			background: orangered;
+
+		}
+
+		&.disabled {
+
+			pointer-events: none;
+			opacity: 0.8;
+
+		}
+
+		div {
+
+			position: absolute;
+			top: $border-width;
+			right: $border-width;
+			bottom: $border-width;
+			left: $border-width;
+			background: black;
+
+		}
+
+	}
+
+}
