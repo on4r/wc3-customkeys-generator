@@ -27,37 +27,29 @@ export default class Grid {
 
 	}
 
-	createTile(x,y) {
+	createTile(x, y) {
 
-		let el = document.createElement('div');
-		let elContent = document.createElement('div');
+		let tile = document.createElement('div');
+		let hotkey = document.createElement('div');
 
-		el.appendChild(elContent);
-		el.classList.add('hotkey-el');
+		tile.classList.add('tile');
+		hotkey.classList.add('hotkey');
+		tile.appendChild(hotkey);
 
 		if (this.options.disabled_tiles && this.options.disabled_tiles.includes(`${x},${y}`) ) {
-			el.classList.add('disabled');
+			tile.classList.add('disabled');
 		}
 
-		return el;
+		return tile;
 
 	}
 
 	render() {
+		
+		let container = document.body;
 
-		let container = document.createElement('div');
-
-		container.classList.add('hotkey-el-container');
-
-		if (this.options.id) {
-			container.id = this.options.id;
-		}
-
-		if (this.options.parent_id) {
-			let parentEl = document.getElementById(this.options.parent_id);
-			parentEl.appendChild(container);
-		} else {
-			document.body.appendChild(container);
+		if (this.options.container_id) {
+			container = document.getElementById(this.options.container_id);	
 		}
 
 		for (let y = 0; y < 3; y++) {
@@ -86,11 +78,47 @@ export default class Grid {
 
 	detectClicks() {
 
-		this.EE.on('tile-clicked', pos => {
-			let hotkey = window.prompt('Enter Hotkey');
-			console.log(hotkey, pos);
-			this.grid[pos.x + '' + pos.y].hotkey = hotkey.toUpperCase();
-			console.log(this.grid);
+		this.EE.once('tile-clicked', pos => {
+
+			this.grid[pos.x + '' + pos.y].el.firstChild.classList.add('active');
+
+			this._awaitHotkeyInput().then(hotkey => {
+				console.log(hotkey, pos);
+				hotkey = hotkey.toUpperCase();
+				this.grid[pos.x + '' + pos.y].hotkey = hotkey;
+				this.grid[pos.x + '' + pos.y].el.firstChild.innerText = hotkey;
+			}, error => {
+				console.log(error.message);
+				this.grid[pos.x + '' + pos.y].el.firstChild.innerText = '!';
+			}).then(() => {
+				this.grid[pos.x + '' + pos.y].el.firstChild.classList.remove('active');
+				this.detectClicks();
+			});
+
+		});
+
+	}
+
+	_awaitHotkeyInput() {
+
+		return new Promise((resolve, reject) => {
+
+			const detectKeyInput = event => {
+				
+				event.preventDefault();
+				document.removeEventListener('keydown', detectKeyInput);
+
+				// add alphanumeric char validation
+				if (true) {
+					resolve(event.key);
+				} else {
+					reject({message: 'enter an alphanumberic character'})
+				}
+
+			}
+
+			document.addEventListener('keydown', detectKeyInput);
+
 		});
 
 	}

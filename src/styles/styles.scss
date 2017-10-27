@@ -1,2 +1,78 @@
-@import 'general';
-@import 'grid';
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+#app-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 100px auto 50px;
+	grid-template-areas:
+	". header ."
+	". main ."
+	". action .";
+	grid-column-gap: 0;
+	grid-row-gap: 50px;
+}
+
+#header {
+	grid-area: header;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+#main {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	justify-content: center;
+
+	.tile {
+		position: relative;
+		cursor: pointer;
+		background-color: #eee;
+		transition: box-shadow .2s ease-out; /* write mixin */
+		
+		&:hover {
+			box-shadow: inset 0px 0px 15px 3px rgba(64,235,106,1); /* write mixin */
+		}
+		
+		&:active {
+			box-shadow: inset 0px 0px 5px 3px rgba(64,235,106,1);		
+		}
+
+		.hotkey {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30px;
+			height: 30px;
+			background-color: white;
+			line-height: 30px;
+			text-align: center;
+			box-sizing: border-box;
+			
+			&.active {
+				border: 2px dashed red;
+			}
+		}
+	}
+}
+
+#action {
+	grid-area: action;
+	display: grid;
+	justify-content: center;
+
+	#dl-btn {
+		border: 3px solid rgb(239,208,68);
+		padding: 0 15px;
+		background-color: #123456; /* :D */
+		color: white;
+		cursor: pointer;
+	}
+}

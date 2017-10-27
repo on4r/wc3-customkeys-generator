@@ -6,33 +6,32 @@ import './styles/styles.scss';
 console.log(heroes);
 
 const normalGridOptions = {
-	id: 'normal-grid',
-	parent_id: 'grids',
+	container_id: 'main',
 	type: 'normal'
 };
 
-const researchGridOptions = {
-	id: 'research-grid',
-	parent_id: 'grids',
-	type: 'research',
-	disabled_tiles: ['3,2']
-};
+// const researchGridOptions = {
+// 	id: 'research-grid',
+// 	parent_id: 'grids',
+// 	type: 'research',
+// 	disabled_tiles: ['3,2']
+// };
+// let researchGrid = new Grid(researchGridOptions);
+// researchGrid.render();
 
 let normalGrid = new Grid(normalGridOptions);
-let researchGrid = new Grid(researchGridOptions);
 
 normalGrid.render();
-researchGrid.render();
+normalGrid.detectClicks();
 
 //normalGrid.fill(heroes[0].spells);
-normalGrid.detectClicks();
 
 // allready done :)
 //setPosForSpells(normalGrid);
 
 // Start Hotkey Generation Button
-const generateBtn = document.getElementById('generate-btn');
-generateBtn.addEventListener('click', () => {
+const dlButton = document.getElementById('dl-btn');
+dlButton.addEventListener('click', () => {
 	normalGrid.assignHotkeys(heroes);
 });
 
