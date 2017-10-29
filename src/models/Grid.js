@@ -1,5 +1,13 @@
 const EventEmitter = require('eventemitter3');
 
+/*	
+
+	container_id: string
+	type: string (normal|research)
+	disabled_tiles: array of strings 'xy'
+
+*/
+
 export default class Grid {
 
 	constructor(options) {
@@ -36,7 +44,7 @@ export default class Grid {
 		hotkey.classList.add('hotkey');
 		tile.appendChild(hotkey);
 
-		if (this.options.disabled_tiles && this.options.disabled_tiles.includes(`${x},${y}`) ) {
+		if (this.options.disabled_tiles && this.options.disabled_tiles.includes(`${x}${y}`) ) {
 			tile.classList.add('disabled');
 		}
 
@@ -143,38 +151,39 @@ export default class Grid {
 
 	}
 
-	setHotkeys(spells) {
+	generateCustomKeys($heroes, $sharedCommands) {
 
-		return new Promise((resolve, reject) => {
+		console.log("generating custom keys ...");
+		let customKeysStr = '';
+
+		// Add General Unit Managment keys to customKeysStr
+		$sharedCommands.forEach(sharedCommand => {
+				
+				let xy = sharedCommand.button_pos[0] + '' + sharedCommand.button_pos[1];
+				if (this.grid[xy].hasOwnProperty('hotkey')) {
+					
+					sharedCommand.hotkey = this.grid[xy].hotkey;
+
+					customKeysStr += `// ${sharedCommand.name}\n`;
+					customKeysStr += `[${sharedCommand.id}]\n`;
+					customKeysStr += `Hotkey=${sharedCommand.hotkey}\n`;
+					customKeysStr += `\n`;
+				
+				}
 
 		});
 
-	}
-
-	assignHotkeys(heroes) {
-
-		heroes.forEach(hero => {
+		// Add hero spells to customKeysStr
+		$heroes.forEach(hero => {
 			hero.spells.forEach(spell => {
-
+				
+				// Assign the hotkey from the grid hotkey map
+				// to the spell
 				let xy = spell.button_pos[0] + '' + spell.button_pos[1];
-
-				if (this.grid.hasOwnProperty(xy)) {
+				if (this.grid[xy].hasOwnProperty('hotkey')) {
 					spell.hotkey = this.grid[xy].hotkey;
 				}
 
-			});
-		});
-
-		console.log(heroes);
-		this.generateCustomKeysTxt(heroes);
-
-	}
-
-	generateCustomKeysTxt(heroes) {
-		console.log("generating custom keys ...");
-		let customKeysStr = '';
-		heroes.forEach(hero => {
-			hero.spells.forEach(spell => {
 				if (typeof spell.id == 'object') {
 					customKeysStr += `// ${spell.name}\n`;
 					spell.id.forEach(id => {
@@ -194,17 +203,17 @@ export default class Grid {
 						customKeysStr += `Unhotkey=${spell.hotkey}\n`;
 					customKeysStr += `\n`;
 				}
+
 			});
 		});
 
+		// Create and start CustomKeys.txt download
 		var a = window.document.createElement('a');
 		a.href = window.URL.createObjectURL(new Blob([customKeysStr], {type: 'text/text'}));
 		a.download = 'CustomKeys.txt';
-
 		document.body.appendChild(a);
 		a.click();
 		document.body.removeChild(a);
-
 		console.log(customKeysStr);
 
 	}

@@ -1,0 +1,50 @@
+[
+   {
+      "name":"Move",
+      "id":"CmdMove",
+      "button_pos":[
+         0,
+         0
+      ]
+   },
+   {
+      "name":"Stop",
+      "id":"CmdStop",
+      "button_pos":[
+         1,
+         0
+      ]
+   },
+   {
+      "name":"Hold Position",
+      "id":"CmdHoldPos",
+      "button_pos":[
+         2,
+         0
+      ]
+   },
+   {
+      "name":"Attack",
+      "id":"CmdAttack",
+      "button_pos":[
+         3,
+         0
+      ]
+   },
+   {
+      "name":"Patrol",
+      "id":"CmdPatrol",
+      "button_pos":[
+         0,
+         1
+      ]
+   },
+   {
+      "name":"Select Skill",
+      "id":"CmdSelectSkill",
+      "button_pos":[
+         3,
+         1
+      ]
+   }
+]

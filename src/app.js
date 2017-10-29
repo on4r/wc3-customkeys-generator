@@ -1,4 +1,5 @@
 import heroes from './json/heroes.json';
+import shared_commands from './json/shared_commands.json';
 import Grid from './models/Grid';
 
 import './styles/styles.scss';
@@ -7,24 +8,14 @@ console.log(heroes);
 
 const normalGridOptions = {
 	container_id: 'main',
-	type: 'normal'
+	type: 'normal',
+  disabled_tiles: ['11','21']
 };
-
-// const researchGridOptions = {
-// 	id: 'research-grid',
-// 	parent_id: 'grids',
-// 	type: 'research',
-// 	disabled_tiles: ['3,2']
-// };
-// let researchGrid = new Grid(researchGridOptions);
-// researchGrid.render();
 
 let normalGrid = new Grid(normalGridOptions);
 
 normalGrid.render();
 normalGrid.detectClicks();
-
-//normalGrid.fill(heroes[0].spells);
 
 // allready done :)
 //setPosForSpells(normalGrid);
@@ -32,7 +23,7 @@ normalGrid.detectClicks();
 // Start Hotkey Generation Button
 const dlButton = document.getElementById('dl-btn');
 dlButton.addEventListener('click', () => {
-	normalGrid.assignHotkeys(heroes);
+	normalGrid.generateCustomKeys(heroes, shared_commands);
 });
 
 // Define reasearch-/button position for spells
