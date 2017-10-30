@@ -107,6 +107,7 @@ export default class Grid {
 			}).then(() => {
 				this.grid[pos.x + '' + pos.y].el.firstChild.classList.remove('active');
 				this.options.actionEl.disabled = this._errosInGrid() ? true : false;
+				this.grid[pos.x + '' + pos.y].el.firstChild.title = this._errosInGrid() ? 'Enter a character between a-z' : '';
 				this.detectClicks();
 			});
 
