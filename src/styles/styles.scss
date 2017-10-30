@@ -1,6 +1,14 @@
-html, body {
-	margin: 0;
+@import 'mixins';
+
+html {
 	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+	background-color: #eee;
 }
 
 #app-container {
@@ -8,7 +16,7 @@ html, body {
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows: 100px auto 50px;
 	grid-template-areas:
-	". header ."
+	"header header header"
 	". main ."
 	". action .";
 	grid-column-gap: 0;
@@ -19,14 +27,31 @@ html, body {
 	grid-area: header;
 	display: grid;
 	justify-content: center;
-	align-content: center;
+	align-content: end;
+
+	h1 {
+		margin: 0;
+		text-align: center;
+		line-height: 30px; 
+		font-family: Impact, Charcoal, sans-serif;
+
+		small {
+			font-family: Tahoma, sans-serif;
+			font-size: 20px;
+		}
+
+		sup {
+			margin-left: 10px;
+			color: red;
+		}
+	}
 }
 
 #main {
 	grid-area: main;
 	display: grid;
-	grid-template-columns: 100px 100px 100px 100px;
-	grid-template-rows: 100px 100px 100px;
+	grid-template-columns: 80px 80px 80px 80px;
+	grid-template-rows: 80px 80px 80px;
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
 	justify-content: center;
@@ -35,23 +60,54 @@ html, body {
 		position: relative;
 		cursor: pointer;
 		background-color: #eee;
-		transition: box-shadow .2s ease-out; /* write mixin */
+		transition: box-shadow .2s ease-out;
 		
 		&:hover {
-			box-shadow: inset 0px 0px 15px 3px rgba(64,235,106,1); /* write mixin */
-		}
-		
-		&:active {
-			box-shadow: inset 0px 0px 5px 3px rgba(64,235,106,1);		
+			box-shadow: inset 0px 0px 15px 3px rgba(64,235,106,1);
 		}
 
 		&.disabled {
 			pointer-events: none;
+			background-color: black;
 
 			.hotkey {
 				display: none;
 			}
+		}
 
+		&.xy-00 {
+			background: url(../assets/icon_move.jpg) no-repeat; 
+			background-size: cover;
+		}
+
+		&.xy-10 {
+			background: url(../assets/icon_stop.jpg) no-repeat; 
+			background-size: cover;
+		}
+
+		&.xy-20 {
+			background: url(../assets/icon_hold.jpg) no-repeat;
+			background-size: cover;
+		}
+
+		&.xy-30 {
+			background: url(../assets/icon_attack.jpg) no-repeat;
+			background-size: cover;
+		}
+
+		&.xy-01 {
+			background: url(../assets/icon_patrole.jpg) no-repeat;
+			background-size: cover;
+		}
+
+		&.xy-31 {
+			background: url(../assets/icon_abilities.jpg) no-repeat;
+			background-size: cover;
+		}
+
+		&.xy-02, &.xy-12, &.xy-22, &.xy-32 {
+			background: url(../assets/icon_spell_placeholder.jpg) no-repeat;
+			background-size: cover;
 		}
 
 		.hotkey {
@@ -61,12 +117,19 @@ html, body {
 			width: 30px;
 			height: 30px;
 			background-color: white;
-			line-height: 30px;
+			line-height: 26px;
 			text-align: center;
 			box-sizing: border-box;
+			border: 2px solid black;
+			@include user-select(none);
 			
+			&.error {
+				color: red;
+			}
+
 			&.active {
-				border: 2px dashed red;
+				border-style: dashed;
+				border-color: red;
 			}
 		}
 	}
@@ -78,10 +141,24 @@ html, body {
 	justify-content: center;
 
 	#dl-btn {
-		border: 3px solid rgb(239,208,68);
+		border: 3px solid black;
 		padding: 0 15px;
-		background-color: #123456; /* :D */
-		color: white;
+		background-color: #efd044;
+		color: black;
 		cursor: pointer;
+		font-size: 15px;
+		border-radius: 10px;
+		font-family: inherit;
+
+		&:disabled {
+			@include filter(grayscale, 100%);
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+
+		&:hover:enabled {
+			border-color: red;
+			color: red;
+		}
 	}
 }

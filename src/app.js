@@ -1,27 +1,23 @@
 import heroes from './json/heroes.json';
 import shared_commands from './json/shared_commands.json';
 import Grid from './models/Grid';
-
 import './styles/styles.scss';
 
 console.log(heroes);
 
+const dlButton = document.getElementById('dl-btn');
 const normalGridOptions = {
-	container_id: 'main',
-	type: 'normal',
-  disabled_tiles: ['11','21']
+  containerId: 'main',
+  type: 'normal',
+  disabledTiles: ['11','21'],
+  actionEl: dlButton
 };
-
-let normalGrid = new Grid(normalGridOptions);
+const normalGrid = new Grid(normalGridOptions);
 
 normalGrid.render();
 normalGrid.detectClicks();
 
-// allready done :)
-//setPosForSpells(normalGrid);
-
 // Start Hotkey Generation Button
-const dlButton = document.getElementById('dl-btn');
 dlButton.addEventListener('click', () => {
 	normalGrid.generateCustomKeys(heroes, shared_commands);
 });

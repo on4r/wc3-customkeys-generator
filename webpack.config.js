@@ -27,6 +27,11 @@ module.exports = {
 					presets: ['es2017']
 				}
 			}
+		}, {
+			test: /\.(png|jpg|gif)$/,
+			use: [{
+				loader: 'url-loader'
+			}]
 		}]
 	},
 	plugins: [

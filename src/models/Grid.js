@@ -2,9 +2,10 @@ const EventEmitter = require('eventemitter3');
 
 /*	
 
-	container_id: string
+	containerId: string
 	type: string (normal|research)
-	disabled_tiles: array of strings 'xy'
+	disabledTiles: array of strings 'xy'
+	actionEl: DOM node of some action element
 
 */
 
@@ -41,10 +42,11 @@ export default class Grid {
 		let hotkey = document.createElement('div');
 
 		tile.classList.add('tile');
+		tile.classList.add('xy-' + x + y);
 		hotkey.classList.add('hotkey');
 		tile.appendChild(hotkey);
 
-		if (this.options.disabled_tiles && this.options.disabled_tiles.includes(`${x}${y}`) ) {
+		if (this.options.disabledTiles && this.options.disabledTiles.includes(`${x}${y}`) ) {
 			tile.classList.add('disabled');
 		}
 
@@ -56,8 +58,8 @@ export default class Grid {
 		
 		let container = document.body;
 
-		if (this.options.container_id) {
-			container = document.getElementById(this.options.container_id);	
+		if (this.options.containerId) {
+			container = document.getElementById(this.options.containerId);	
 		}
 
 		for (let y = 0; y < 3; y++) {
@@ -95,11 +97,16 @@ export default class Grid {
 				hotkey = hotkey.toUpperCase();
 				this.grid[pos.x + '' + pos.y].hotkey = hotkey;
 				this.grid[pos.x + '' + pos.y].el.firstChild.innerText = hotkey;
+				this.grid[pos.x + '' + pos.y].el.firstChild.classList.remove('error');
+				this.grid[pos.x + '' + pos.y].error = false;
 			}, error => {
 				console.log(error.message);
 				this.grid[pos.x + '' + pos.y].el.firstChild.innerText = '!';
+				this.grid[pos.x + '' + pos.y].el.firstChild.classList.add('error');
+				this.grid[pos.x + '' + pos.y].error = true;
 			}).then(() => {
 				this.grid[pos.x + '' + pos.y].el.firstChild.classList.remove('active');
+				this.options.actionEl.disabled = this._errosInGrid() ? true : false;
 				this.detectClicks();
 			});
 
@@ -111,43 +118,36 @@ export default class Grid {
 
 		return new Promise((resolve, reject) => {
 
-			const detectKeyInput = event => {
-				
-				event.preventDefault();
-				document.removeEventListener('keydown', detectKeyInput);
+			document.addEventListener('keydown', validate);
+			
+			function validate(event) {
 
-				// add alphanumeric char validation
-				if (true) {
+				// remove event listener till next function call
+				document.removeEventListener('keydown', validate);
+
+				// validate user input (a-z)
+				if (/^[a-z]$/.test(event.key)) {
 					resolve(event.key);
 				} else {
-					reject({message: 'enter an alphanumberic character'})
+					reject({message: 'enter a valid character (a-z)'})
 				}
 
 			}
 
-			document.addEventListener('keydown', detectKeyInput);
-
 		});
 
 	}
 
-	updateTile(tile, text) {
+	_errosInGrid() {
 
-		// <div class="hotkey-el"><div></div></div>
-		// children[0] is the empty <div>
-		tile.el.children[0].innerText = text;
-
-	}
-
-	fill(spells) {
-
-		spells.forEach(spell => {
-			let tile =
-				(this.options.type == 'normal') ?
-				this.grid[spell.button_pos[0] + '' + spell.button_pos[1]] :
-				this.grid[spell.research_button_pos[0] + '' + spell.research_button_pos[1]];
-			this.updateTile(tile, spell.name);
-		});
+		const tilesArr = Object.values(this.grid);
+		
+		for (let i = 0; i < tilesArr.length; i++) {
+			if (tilesArr[i].error == true)
+				return true;
+		}
+		
+		return false;
 
 	}
 
