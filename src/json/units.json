@@ -438,5 +438,239 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Wisp",
+    "id": "ewsp",
+    "race": "nightelf",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Detonate",
+        "id": "Adtn",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Archer",
+    "id": "earc",
+    "race": "nightelf",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Mount Hippogryph",
+        "id": "Aco2",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Dismount Hippogryph",
+        "id": "Adec",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Huntress",
+    "id": "esen",
+    "race": "nightelf",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Sentinel",
+        "id": "Aesn",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dryad",
+    "id": "edry",
+    "race": "nightelf",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Dispel Magic",
+        "id": "Aadm",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Glaive Thrower",
+    "id": "ebal",
+    "race": "nightelf",
+    "spells": []
+  },
+  {
+    "name": "Hippogryph",
+    "id": "ehip",
+    "race": "nightelf",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Pick up Archer",
+        "id": "Aco3",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chimaera",
+    "id": "echm",
+    "race": "nightelf",
+    "spells": []
+  },
+  {
+    "name": "Druid of the Talon",
+    "id": "edot",
+    "race": "nightelf",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Faerie Fire",
+        "id": [
+          "Afae",
+          "Afa2"
+        ],
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Cyclone",
+        "id": "Acyc",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Crow Form",
+        "id": "Arav",
+        "type": "toggle",
+        "button_pos": [
+          3,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Druid of the Claw",
+    "id": "edoc",
+    "race": "nightelf",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Roar",
+        "id": [
+          "Aroa",
+          "Ara2"
+        ],
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Rejuvenation",
+        "id": "Arej",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Bear Form",
+        "id": "Abrf",
+        "type": "toggle",
+        "button_pos": [
+          3,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mountain Giant",
+    "id": "emtg",
+    "race": "nightelf",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "War Club",
+        "id": "Agra",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Taunt",
+        "id": "Atau",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Faerie Dragon",
+    "id": "efdr",
+    "race": "nightelf",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Phase Shift",
+        "id": "Apsh",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Mana Flare",
+        "id": "Amfl",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
   }
 ]
