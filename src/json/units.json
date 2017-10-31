@@ -672,5 +672,275 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Acolyte",
+    "id": "uaco",
+    "race": "undead",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Unsummon",
+        "id": "Auns",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Sacrifice",
+        "id": "Alam",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ghoul",
+    "id": "ugho",
+    "race": "undead",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Cannibalize",
+        "id": "Acan",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Abomination",
+    "id": "uabo",
+    "race": "undead",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Cannibalize",
+        "id": "Acn2",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Meat Wagon",
+    "id": "umtw",
+    "race": "undead",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Load Corpse",
+        "id": "Amel",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Unload Corpse",
+        "id": "Amed",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Crypt Fiend",
+    "id": "ucry",
+    "race": "undead",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Web",
+        "id": "Aweb",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Burrow",
+        "id": "Abur",
+        "type": "toggle",
+        "button_pos": [
+          3,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gargoyle",
+    "id": "ugar",
+    "race": "undead",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Stone Form",
+        "id": "Astn",
+        "type": "toggle",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Banshee",
+    "id": "uban",
+    "race": "undead",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Curse",
+        "id": "Acrs",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Anti-magic Shell",
+        "id": [
+          "Aams",
+          "Aam2"
+        ],
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Possession",
+        "id": [
+          "Apos",
+          "Aps2"
+        ],
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Necromancer",
+    "id": "unec",
+    "race": "undead",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Raise Dead",
+        "id": "Arai",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Unholy Frenzy",
+        "id": "Auhf",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Cripple",
+        "id": "Acri",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Obsidian Statue",
+    "id": "uobs",
+    "race": "undead",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Essence of Blight",
+        "id": "Arpl",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Spirit Touch",
+        "id": "12",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Destroyer",
+    "id": "ubsp",
+    "race": "undead",
+    "button_pos": [
+      3,
+      2
+    ],
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Devour Magic",
+        "id": "Advm",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Orb of Annihilation",
+        "id": "Afak",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Absorb Mana",
+        "id": "Aabs",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ]
+      }
+    ]
   }
 ]
