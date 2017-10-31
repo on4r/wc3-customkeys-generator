@@ -1,5 +1,6 @@
 import heroes from './json/heroes.json';
 import units from './json/units.json';
+import spells from './json/spells.json';
 import shared_commands from './json/shared_commands.json';
 import Grid from './models/Grid';
 import './styles/styles.scss';
@@ -12,7 +13,7 @@ const dlButton = document.getElementById('dl-btn');
 const normalGridOptions = {
   containerId: 'main',
   type: 'normal',
-  disabledTiles: ['11','21'],
+  // disabledTiles: ['11','21'],
   actionEl: dlButton
 };
 const normalGrid = new Grid(normalGridOptions);
@@ -22,7 +23,7 @@ normalGrid.detectClicks();
 
 // Start Hotkey Generation Button
 dlButton.addEventListener('click', () => {
-	normalGrid.generateCustomKeys(heroes, units, shared_commands);
+	normalGrid.generateCustomKeys(heroes, units, spells, shared_commands);
 });
 
 // Define reasearch-/button position for spells

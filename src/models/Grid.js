@@ -152,7 +152,7 @@ export default class Grid {
 
 	}
 
-	generateCustomKeys($heroes, $units, $sharedCommands) {
+	generateCustomKeys($heroes, $units, $spells, $sharedCommands) {
 
 		console.log("generating custom keys ...");
 		let customKeysStr = '';
@@ -174,13 +174,35 @@ export default class Grid {
 
 		});
 
+		// Add general spells to customKeysStr
+		$spells.forEach(spell => {
+
+				let xy = spell.button_pos[0] + '' + spell.button_pos[1];
+				if (this.grid[xy].hasOwnProperty('hotkey')) {
+
+					spell.hotkey = this.grid[xy].hotkey;
+
+					customKeysStr += `// ${spell.name}\n`;
+					customKeysStr += `[${spell.id}]\n`;
+					customKeysStr += `Hotkey=${spell.hotkey}\n`;
+					if (spell.type == 'toggle') {
+						customKeysStr += `Unhotkey=${spell.hotkey}\n`;
+					} else if (spell.hasOwnProperty('unhotkey')) {
+						customKeysStr += `Unhotkey=${spell.unhotkey}\n`;
+					}
+					customKeysStr += `\n`;
+
+				}s
+
+		});
+
 		// Add unit spells to customKeysStr
 		$units.forEach(unit => {
 			unit.spells.forEach(spell => {
 
 				let buttonPosXY = spell.button_pos[0] + '' + spell.button_pos[1];
 				spell.hotkey = this.grid[buttonPosXY].hotkey;
-				if (spell.hasOwnProperty('unbutton_pos')) {				
+				if (spell.hasOwnProperty('unbutton_pos')) {
 					let unbuttonPosXY = spell.unbutton_pos[0] + '' + spell.unbutton_pos[1];
 					spell.unhotkey = this.grid[unbuttonPosXY].hotkey;
 				}
