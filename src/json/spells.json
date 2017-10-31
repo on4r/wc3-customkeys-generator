@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Eat Tree",
+    "id": "Aeat",
+    "type": "active",
+    "button_pos": [
+      0,
+      2
+    ],
+    "race": "nightelf"
+  },
+  {
+    "name": "Root",
+    "id": "Aroo",
+    "type": "toggle",
+    "button_pos": [
+      3,
+      2
+    ],
+    "race": "nightelf"
+  },
+  {
+    "name": "Shadow Meld",
+    "id": "Ashm",
+    "type": "active",
+    "button_pos": [
+      2,
+      1
+    ],
+    "race": "nightelf"
+  },
+  {
+    "name": "Entangle Gold Mine",
+    "id": "Aent",
+    "type": "active",
+    "button_pos": [
+      1,
+      2
+    ],
+    "race": "nightelf"
+  },
+  {
+    "name": "Entangled Gold Mine Cargo",
+    "id": "Aenc",
+    "type": "active",
+    "button_pos": [
+      0,
+      2
+    ],
+    "unbutton_pos": [
+      1,
+      2
+    ],
+    "race": "nightelf"
+  },
+  {
+    "name": "Cargo Load Entangled Mine",
+    "id": "Slo2",
+    "type": "active",
+    "button_pos": [
+      0,
+      2
+    ],
+    "race": "nightelf"
+  },
+  {
+    "name": "Cargo Unload Entangled Mine",
+    "id": "Adri",
+    "type": "active",
+    "button_pos": [
+      1,
+      2
+    ],
+    "race": "nightelf"
+  }
+]

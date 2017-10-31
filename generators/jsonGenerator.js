@@ -4,14 +4,15 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 const heroesJson = __dirname + '/../src/json/heroes.json';
-const unitsJson = __dirname + '/../src/json/units.json';
+const unitsJson  = __dirname + '/../src/json/units.json';
+const spellsJson = __dirname + '/../src/json/spells.json';
 
 const selectGeneratorQuestion = [
 	{
 		name: 'name',
 		type: 'list',
 		message: 'Select Generator:',
-		choices: ['unit', 'hero']
+		choices: ['unit', 'hero', 'spell']
 	}
 ];
 const confirmInput = [
@@ -168,6 +169,14 @@ const countQuestion = [
 			if (!isNaN(value) && value >= 1) return true;
 			else return 'Please enter a positive number';
 		}
+	}
+];
+const raceQuestions = [
+	{
+		name: 'name',
+		type: 'list',
+		message: 'Which race does this spell belong to?',
+		choices: ['human', 'orc', 'nightelf', 'undead', 'neutral']
 	}
 ];
 
@@ -330,6 +339,31 @@ class Spell {
 
 	}
 
+	addRace() {
+
+		return inquirer.prompt(raceQuestions).then(race => {
+
+			this.race = race.name;
+
+		});
+
+	}
+
+	save() {
+
+		inquirer.prompt(confirmInput).then(confirm => {
+
+			if (confirm.save) {
+				writeToJsonFile(spellsJson, this);
+				console.log('Saved spell to', spellsJson);
+			} else {
+				console.log('Aborted');
+			}
+
+		});
+
+	}
+
 }
 
 class Summon {
@@ -384,11 +418,15 @@ selectGenerator();
 function selectGenerator() {
 
 	inquirer.prompt(selectGeneratorQuestion).then(generator => {
+		
 		if (generator.name == 'hero') {
 			createHero();
 		} else if (generator.name == 'unit') {
 			createUnit();
+		} else if (generator.name == 'spell') {
+			createSpell();
 		}
+
 	});
 
 }
@@ -413,6 +451,17 @@ async function createUnit() {
 	await unit.init();
 	await unit.addSpells(unit.spellsCount);
 	unit.save();
+
+}
+
+async function createSpell() {
+
+	console.log('-~= Create Spell =~-');
+
+	let spell = new Spell;
+	await spell.init();
+	await spell.addRace();
+	spell.save();
 
 }
 
