@@ -3,8 +3,17 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const heroesJson = __dirname + '/heroes.json';
+const heroesJson = __dirname + '/../src/json/heroes.json';
+const unitsJson = __dirname + '/../src/json/units.json';
 
+const selectGeneratorQuestion = [
+	{
+		name: 'name',
+		type: 'list',
+		message: 'Select Generator:',
+		choices: ['unit', 'hero']
+	}
+];
 const confirmInput = [
 	{
 		name: 'save',
@@ -48,6 +57,42 @@ const createHeroQuestions = [
 		choices: ['no', 'yes'],
 	}
 ];
+const createUnitQuestions = [
+	{
+		name: 'name',
+		type: 'input',
+		message: 'Name:',
+		validate: value => {
+			if (value.length) return true;
+			else return 'Please enter a unit name.';
+		}
+	},
+	{
+		name: 'id',
+		type: 'input',
+		message: 'ID(s):',
+		filter: value => {
+			if (value.includes(',')) return value.split(',')
+			else return value;
+		},
+		validate: value => {
+			if (value.length) return true;
+			else return 'Please enter a unit ID.';
+		}
+	},
+	{
+		name: 'race',
+		type: 'list',
+		message: 'Race:',
+		choices: ['human', 'orc', 'nightelf', 'undead', 'neutral']
+	},
+	{
+		name: 'spells',
+		type: 'list',
+		message: 'Does this unit have active spells?',
+		choices: ['yes', 'no'],
+	}
+];
 const createSpellQuestions = [
 	{
 		name: 'name',
@@ -69,6 +114,28 @@ const createSpellQuestions = [
 		validate: value => {
 			if (value.length) return true;
 			else return 'Please enter a spell ID.';
+		}
+	},
+	{
+		name: 'button_pos',
+		type: 'input',
+		message: 'Button Position (xy):',
+		filter: pos => {
+			if (pos.lenght > 2 || isNaN(Number(pos)) ) return '';
+			return pos.split('').map(val => Number(val));
+		},
+		validate: pos => {
+			if (pos.length) return true;
+			else return 'Please enter a button position.';
+		}
+	},
+	{
+		name: 'unbutton_pos',
+		type: 'input',
+		message: 'Unbutton Position (xy):',
+		filter: pos => {
+			if (pos.lenght > 2 || isNaN(Number(pos)) ) return '';
+			return pos.split('').map(val => Number(val));
 		}
 	},
 	{
@@ -177,6 +244,66 @@ class Hero {
 
 }
 
+class Unit {
+
+	constructor() {
+
+		this.name;
+		this.id;
+		this.race;
+		this.spells;
+
+	}
+
+	init() {
+
+		return inquirer.prompt(createUnitQuestions).then(unit => {
+
+			this.name = unit.name;
+			this.id = unit.id;
+			this.race = unit.race;
+
+			return unit;
+
+		}).then(unit => {
+
+			if (unit.spells == 'yes') {
+
+				return inquirer.prompt(countQuestion).then(spells => {
+					this.spellsCount = spells.count;
+				});
+
+			}
+
+		});
+
+	}
+
+	addSpells(count) {
+
+		return createSpells(count).then(spells => {
+			this.spells = spells;
+		});
+
+	}
+
+	save() {
+
+		inquirer.prompt(confirmInput).then(confirm => {
+
+			if (confirm.save) {
+				writeToJsonFile(unitsJson, this);
+				console.log('Saved unit to', unitsJson);
+			} else {
+				console.log('Aborted');
+			}
+
+		});
+
+	}
+
+}
+
 class Spell {
 
 	constructor() {
@@ -184,6 +311,7 @@ class Spell {
 		this.name;
 		this.id;
 		this.type;
+		this.button_pos;
 
 	}
 
@@ -194,6 +322,9 @@ class Spell {
 			this.name = spell.name;
 			this.id  = spell.id;
 			this.type = spell.type;
+			this.button_pos = spell.button_pos;
+			if (spell.unbutton_pos.length)
+				this.unbutton_pos = spell.unbutton_pos;
 
 		});
 
@@ -244,11 +375,23 @@ class Summon {
 // init
 //---
 
-createHero();
+selectGenerator();
 
 //---
 // functions
 //---
+
+function selectGenerator() {
+
+	inquirer.prompt(selectGeneratorQuestion).then(generator => {
+		if (generator.name == 'hero') {
+			createHero();
+		} else if (generator.name == 'unit') {
+			createUnit();
+		}
+	});
+
+}
 
 async function createHero() {
 
@@ -259,6 +402,17 @@ async function createHero() {
 	await hero.addSpells(4);
 	await hero.addSummons(hero.summonsCount);
 	hero.save();
+
+}
+
+async function createUnit() {
+
+	console.log('-~= Create Unit =~-');
+
+	let unit = new Unit;
+	await unit.init();
+	await unit.addSpells(unit.spellsCount);
+	unit.save();
 
 }
 

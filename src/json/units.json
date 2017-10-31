@@ -1,0 +1,215 @@
+[
+  {
+    "name": "Peasant",
+    "id": "hpea",
+    "race": "human",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Call to Arms",
+        "id": [
+          "Amil",
+          "Amic"
+        ],
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "unbutton_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Footman",
+    "id": "hfoo",
+    "race": "human",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Defend",
+        "id": "Adef",
+        "type": "toggle",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Knight",
+    "id": "hkni",
+    "race": "human",
+    "spells": []
+  },
+  {
+    "name": "Rifleman",
+    "id": "hrif",
+    "race": "human",
+    "spells": []
+  },
+  {
+    "name": "Mortar Team",
+    "id": "hmtm",
+    "race": "human",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Flare",
+        "id": "Afla",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gyrocopter",
+    "id": "hgyr",
+    "race": "human",
+    "spells": []
+  },
+  {
+    "name": "Gryphon Rider",
+    "id": "hgry",
+    "race": "human",
+    "spells": []
+  },
+  {
+    "name": "Priest",
+    "id": "hmpr",
+    "race": "human",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Heal",
+        "id": "Ahea",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Dispel Magic",
+        "id": "Adis",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Inner Fire",
+        "id": "Ainf",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sorceress",
+    "id": "hsor",
+    "race": "human",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Slow",
+        "id": "Aslo",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Invisibility",
+        "id": "Aivs",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Polymorph",
+        "id": "Aply",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Siege Engine",
+    "id": [
+      "hmtt",
+      "hrtt"
+    ],
+    "race": "human",
+    "spells": []
+  },
+  {
+    "name": "Spell Breaker",
+    "id": "hspt",
+    "race": "human",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Spell Steal",
+        "id": "Asps",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Control Magic",
+        "id": "Acmg",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dragonhawk",
+    "id": "hdhw",
+    "race": "human",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Aerial Shackles",
+        "id": "Amls",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Cloud",
+        "id": "Aclf",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  }
+]

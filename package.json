@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "webpack",
 		"dev": "webpack-dev-server --open --hot --content-base dist/",
-		"gen": "node generators/createHeroes.js"
+		"gen": "node generators/jsonGenerator.js"
 	},
 	"author": "on4r",
 	"license": "ISC",
