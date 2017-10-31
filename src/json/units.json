@@ -211,5 +211,232 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Peon",
+    "id": "opeo",
+    "race": "orc",
+    "spells": []
+  },
+  {
+    "name": "Grunt",
+    "id": "ogru",
+    "race": "orc",
+    "spells": []
+  },
+  {
+    "name": "Raider",
+    "id": "orai",
+    "race": "orc",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Ensnare",
+        "id": "Aens",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tauren",
+    "id": "otau",
+    "race": "orc",
+    "spells": []
+  },
+  {
+    "name": "Troll Headhunter",
+    "id": "ohun",
+    "race": "orc",
+    "spells": []
+  },
+  {
+    "name": "Troll Berserker",
+    "id": "otbk",
+    "race": "orc",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Berserk",
+        "id": "Absk",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Demolisher",
+    "id": "ocat",
+    "race": "orc",
+    "spells": []
+  },
+  {
+    "name": "Kodo Beast",
+    "id": "okod",
+    "race": "orc",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Devour",
+        "id": "Adev",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wind Rider",
+    "id": "owyv",
+    "race": "orc",
+    "spells": []
+  },
+  {
+    "name": "Troll Batrider",
+    "id": "otbr",
+    "race": "orc",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Unstable Concoction",
+        "id": "Auco",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Witch Doctor",
+    "id": "odoc",
+    "race": "orc",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Sentry Ward",
+        "id": "Aeye",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Stasis Trap",
+        "id": "Asta",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Healing Ward",
+        "id": "Ahwd",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shaman",
+    "id": "oshm",
+    "race": "orc",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Purge",
+        "id": "Aprg",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Lightning Shield",
+        "id": "Alsh",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Bloodlust",
+        "id": "Ablo",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Spirit Walker",
+    "id": "ospm",
+    "race": "orc",
+    "spellsCount": 5,
+    "spells": [
+      {
+        "name": "Spirit Link",
+        "id": "Aspl",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Disenchant",
+        "id": "Adcn",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Ancestral Spirit",
+        "id": "Aast",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      },
+      {
+        "name": "Ethereal Form",
+        "id": "Aetf",
+        "type": "toggle",
+        "button_pos": [
+          3,
+          2
+        ]
+      },
+      {
+        "name": "Corporeal Form",
+        "id": "Acpf",
+        "type": "toggle",
+        "button_pos": [
+          3,
+          2
+        ]
+      }
+    ]
   }
 ]
