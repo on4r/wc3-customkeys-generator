@@ -1,6 +1,6 @@
 const EventEmitter = require('eventemitter3');
 
-/*	
+/*
 
 	containerId: string
 	type: string (normal|research)
@@ -55,11 +55,11 @@ export default class Grid {
 	}
 
 	render() {
-		
+
 		let container = document.body;
 
 		if (this.options.containerId) {
-			container = document.getElementById(this.options.containerId);	
+			container = document.getElementById(this.options.containerId);
 		}
 
 		for (let y = 0; y < 3; y++) {
@@ -120,7 +120,7 @@ export default class Grid {
 		return new Promise((resolve, reject) => {
 
 			document.addEventListener('keydown', validate);
-			
+
 			function validate(event) {
 
 				// remove event listener till next function call
@@ -142,12 +142,12 @@ export default class Grid {
 	_errosInGrid() {
 
 		const tilesArr = Object.values(this.grid);
-		
+
 		for (let i = 0; i < tilesArr.length; i++) {
 			if (tilesArr[i].error == true)
 				return true;
 		}
-		
+
 		return false;
 
 	}
@@ -159,17 +159,17 @@ export default class Grid {
 
 		// Add General Unit Managment keys to customKeysStr
 		$sharedCommands.forEach(sharedCommand => {
-				
+
 				let xy = sharedCommand.button_pos[0] + '' + sharedCommand.button_pos[1];
 				if (this.grid[xy].hasOwnProperty('hotkey')) {
-					
+
 					sharedCommand.hotkey = this.grid[xy].hotkey;
 
 					customKeysStr += `// ${sharedCommand.name}\n`;
 					customKeysStr += `[${sharedCommand.id}]\n`;
 					customKeysStr += `Hotkey=${sharedCommand.hotkey}\n`;
 					customKeysStr += `\n`;
-				
+
 				}
 
 		});
@@ -192,7 +192,7 @@ export default class Grid {
 					}
 					customKeysStr += `\n`;
 
-				}s
+				}
 
 		});
 
@@ -229,7 +229,7 @@ export default class Grid {
 						customKeysStr += `Unhotkey=${spell.unhotkey}\n`;
 					}
 					customKeysStr += `\n`;
-				}				
+				}
 
 			});
 		});
@@ -237,7 +237,7 @@ export default class Grid {
 		// Add hero spells to customKeysStr
 		$heroes.forEach(hero => {
 			hero.spells.forEach(spell => {
-				
+
 				// Assign the hotkey from the grid hotkey map
 				// to the spell
 				let xy = spell.button_pos[0] + '' + spell.button_pos[1];
