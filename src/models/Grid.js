@@ -152,7 +152,7 @@ export default class Grid {
 
 	}
 
-	generateCustomKeys($heroes, $sharedCommands) {
+	generateCustomKeys($heroes, $units, $sharedCommands) {
 
 		console.log("generating custom keys ...");
 		let customKeysStr = '';
@@ -172,6 +172,44 @@ export default class Grid {
 				
 				}
 
+		});
+
+		// Add unit spells to customKeysStr
+		$units.forEach(unit => {
+			unit.spells.forEach(spell => {
+
+				let buttonPosXY = spell.button_pos[0] + '' + spell.button_pos[1];
+				spell.hotkey = this.grid[buttonPosXY].hotkey;
+				if (spell.hasOwnProperty('unbutton_pos')) {				
+					let unbuttonPosXY = spell.unbutton_pos[0] + '' + spell.unbutton_pos[1];
+					spell.unhotkey = this.grid[unbuttonPosXY].hotkey;
+				}
+
+				if (typeof spell.id == 'object') {
+					customKeysStr += `// ${spell.name}\n`;
+					spell.id.forEach(id => {
+						customKeysStr += `[${id}]\n`;
+						customKeysStr += `Hotkey=${spell.hotkey}\n`;
+						if (spell.type == 'toggle') {
+							customKeysStr += `Unhotkey=${spell.hotkey}\n`;
+						} else if (spell.hasOwnProperty('unhotkey')) {
+							customKeysStr += `Unhotkey=${spell.unhotkey}\n`;
+						}
+						customKeysStr += `\n`;
+					});
+				} else {
+					customKeysStr += `// ${spell.name}\n`;
+					customKeysStr += `[${spell.id}]\n`;
+					customKeysStr += `Hotkey=${spell.hotkey}\n`;
+					if (spell.type == 'toggle') {
+						customKeysStr += `Unhotkey=${spell.hotkey}\n`;
+					} else if (spell.hasOwnProperty('unhotkey')) {
+						customKeysStr += `Unhotkey=${spell.unhotkey}\n`;
+					}
+					customKeysStr += `\n`;
+				}				
+
+			});
 		});
 
 		// Add hero spells to customKeysStr
