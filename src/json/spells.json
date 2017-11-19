@@ -11,7 +11,11 @@
   },
   {
     "name": "Root",
-    "id": "Aroo",
+    "id": [
+      "Aroo",
+      "Aro1",
+      "Aro2"
+    ],
     "type": "toggle",
     "button_pos": [
       3,
