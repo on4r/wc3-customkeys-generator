@@ -7,6 +7,7 @@ import './styles/styles.scss';
 
 console.log("heroes:", heroes);
 console.log("units:", units);
+console.log("spells:", spells);
 console.log("shared commands:", shared_commands);
 
 const dlButton = document.getElementById('dl-btn');
@@ -23,7 +24,8 @@ normalGrid.detectClicks();
 
 // Start Hotkey Generation Button
 dlButton.addEventListener('click', () => {
-	normalGrid.generateCustomKeys(heroes, units, spells, shared_commands);
+  let checkedBoxes = [...document.querySelectorAll('input[type=checkbox]:checked')].map(checkbox => checkbox.value);
+	normalGrid.generateCustomKeys(heroes, units, spells, shared_commands, checkedBoxes);
 });
 
 // Define reasearch-/button position for spells

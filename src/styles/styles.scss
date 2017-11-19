@@ -14,7 +14,7 @@ body {
 #app-container {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 100px auto 50px;
+	grid-template-rows: 100px auto auto;
 	grid-template-areas:
 	"header header header"
 	". main ."
@@ -141,9 +141,14 @@ body {
 	display: grid;
 	justify-content: center;
 
+  label {
+    display: inline-flex;
+  }
+
 	#dl-btn {
 		border: 3px solid black;
-		padding: 0 15px;
+		padding: 15px;
+    margin-top: 20px;
 		background-color: #efd044;
 		color: black;
 		cursor: pointer;

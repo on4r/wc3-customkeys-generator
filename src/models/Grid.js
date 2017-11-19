@@ -152,121 +152,44 @@ export default class Grid {
 
 	}
 
-	generateCustomKeys($heroes, $units, $spells, $sharedCommands) {
+	generateCustomKeys($heroes, $units, $spells, $sharedCommands, $checkedBoxes) {
 
 		console.log("generating custom keys ...");
+
 		let customKeysStr = '';
+		let sharedCommandsStr = '';
+		let miscSpellsStr = '';
+		let unitSpellsStr = '';
+		let heroSpellsStr = '';
 
-		// Add General Unit Managment keys to customKeysStr
-		$sharedCommands.forEach(sharedCommand => {
+		// Add general unit managment
+		sharedCommandsStr = this.addToCustomKeys(customKeysStr, $sharedCommands, 'sharedCommand');
 
-				let xy = sharedCommand.button_pos[0] + '' + sharedCommand.button_pos[1];
-				if (this.grid[xy].hasOwnProperty('hotkey')) {
+		// Add misc spells
+		miscSpellsStr = this.addToCustomKeys(customKeysStr, $spells, 'spell');
 
-					sharedCommand.hotkey = this.grid[xy].hotkey;
-
-					customKeysStr += `// ${sharedCommand.name}\n`;
-					customKeysStr += `[${sharedCommand.id}]\n`;
-					customKeysStr += `Hotkey=${sharedCommand.hotkey}\n`;
-					customKeysStr += `\n`;
-
-				}
-
-		});
-
-		// Add general spells to customKeysStr
-		$spells.forEach(spell => {
-
-				let xy = spell.button_pos[0] + '' + spell.button_pos[1];
-				if (this.grid[xy].hasOwnProperty('hotkey')) {
-
-					spell.hotkey = this.grid[xy].hotkey;
-
-					customKeysStr += `// ${spell.name}\n`;
-					customKeysStr += `[${spell.id}]\n`;
-					customKeysStr += `Hotkey=${spell.hotkey}\n`;
-					if (spell.type == 'toggle') {
-						customKeysStr += `Unhotkey=${spell.hotkey}\n`;
-					} else if (spell.hasOwnProperty('unhotkey')) {
-						customKeysStr += `Unhotkey=${spell.unhotkey}\n`;
-					}
-					customKeysStr += `\n`;
-
-				}
-
-		});
-
-		// Add unit spells to customKeysStr
-		$units.forEach(unit => {
-			unit.spells.forEach(spell => {
-
-				let buttonPosXY = spell.button_pos[0] + '' + spell.button_pos[1];
-				spell.hotkey = this.grid[buttonPosXY].hotkey;
-				if (spell.hasOwnProperty('unbutton_pos')) {
-					let unbuttonPosXY = spell.unbutton_pos[0] + '' + spell.unbutton_pos[1];
-					spell.unhotkey = this.grid[unbuttonPosXY].hotkey;
-				}
-
-				if (typeof spell.id == 'object') {
-					customKeysStr += `// ${spell.name}\n`;
-					spell.id.forEach(id => {
-						customKeysStr += `[${id}]\n`;
-						customKeysStr += `Hotkey=${spell.hotkey}\n`;
-						if (spell.type == 'toggle') {
-							customKeysStr += `Unhotkey=${spell.hotkey}\n`;
-						} else if (spell.hasOwnProperty('unhotkey')) {
-							customKeysStr += `Unhotkey=${spell.unhotkey}\n`;
-						}
-						customKeysStr += `\n`;
-					});
-				} else {
-					customKeysStr += `// ${spell.name}\n`;
-					customKeysStr += `[${spell.id}]\n`;
-					customKeysStr += `Hotkey=${spell.hotkey}\n`;
-					if (spell.type == 'toggle') {
-						customKeysStr += `Unhotkey=${spell.hotkey}\n`;
-					} else if (spell.hasOwnProperty('unhotkey')) {
-						customKeysStr += `Unhotkey=${spell.unhotkey}\n`;
-					}
-					customKeysStr += `\n`;
-				}
-
+		// Add unit spells
+		if ($checkedBoxes.includes('units')) {
+			let tmp = '';
+			$units.forEach(unit => {
+				tmp += this.addToCustomKeys(customKeysStr, unit.spells, 'unit');
 			});
-		});
+			unitSpellsStr = tmp;
+		}
 
-		// Add hero spells to customKeysStr
-		$heroes.forEach(hero => {
-			hero.spells.forEach(spell => {
-
-				// Assign the hotkey from the grid hotkey map
-				// to the spell
-				let xy = spell.button_pos[0] + '' + spell.button_pos[1];
-				if (this.grid[xy].hasOwnProperty('hotkey')) {
-					spell.hotkey = this.grid[xy].hotkey;
-				}
-
-				if (typeof spell.id == 'object') {
-					customKeysStr += `// ${spell.name}\n`;
-					spell.id.forEach(id => {
-						customKeysStr += `[${id}]\n`;
-						customKeysStr += `Hotkey=${spell.hotkey}\n`;
-						customKeysStr += `Researchhotkey=${spell.hotkey}\n`
-						if (spell.type == 'toggle')
-							customKeysStr += `Unhotkey=${spell.hotkey}\n`;
-						customKeysStr += `\n`;
-					});
-				} else {
-					customKeysStr += `// ${spell.name}\n`;
-					customKeysStr += `[${spell.id}]\n`;
-					customKeysStr += `Hotkey=${spell.hotkey}\n`;
-					customKeysStr += `Researchhotkey=${spell.hotkey}\n`
-					if (spell.type == 'toggle')
-						customKeysStr += `Unhotkey=${spell.hotkey}\n`;
-					customKeysStr += `\n`;
-				}
-
+		// Add hero spells
+		if ($checkedBoxes.includes('heroes')) {
+			let tmp = '';
+			$heroes.forEach(hero => {
+				tmp += this.addToCustomKeys(customKeysStr, hero.spells, 'hero');
+				hero.summons.forEach(summon => {
+					tmp += this.addToCustomKeys(customKeysStr, summon.spells, 'summon');
+				});
 			});
-		});
+			heroSpellsStr = tmp;
+		}
+
+		customKeysStr = sharedCommandsStr + miscSpellsStr + unitSpellsStr + heroSpellsStr;
 
 		// Create and start CustomKeys.txt download
 		var a = window.document.createElement('a');
@@ -276,6 +199,63 @@ export default class Grid {
 		a.click();
 		document.body.removeChild(a);
 		console.log(customKeysStr);
+
+	}
+
+	addToCustomKeys($str, $arr, $type) {
+
+		$arr.forEach(val => {
+
+			// create xy string
+			let xy = val.button_pos[0] + '' + val.button_pos[1];
+			
+			// skip further processing if there is no hotkey set for position xy
+			if (this.grid[xy].hotkey === undefined) {
+				return;
+			} else {
+				val.hotkey = this.grid[xy].hotkey;
+			}
+
+			// add everything need to provided string
+			$str += `// ${val.name}\n`;
+			
+			if (typeof val.id == 'object') {
+				
+				val.id.forEach(id => {
+					$str += `[${id}]\n`;
+					_generateHotkeyContent(val);
+				});
+
+			} else {
+
+				$str += `[${val.id}]\n`;
+				_generateHotkeyContent(val)
+			
+			}
+
+			$str += `\n`;
+
+		});
+
+		function _generateHotkeyContent(val) {
+
+			$str += `Hotkey=${val.hotkey}\n`;
+			$str += `Tip=${val.name} (|cffffcc00${val.hotkey}|r)\n`;
+
+			// Researchhotkey = Hotkey for heroes only
+			if ($type === 'hero') {
+				$str += `Researchhotkey=${val.hotkey}\n`
+			}
+			
+			if (val.type == 'toggle') {
+				$str += `Unhotkey=${val.hotkey}\n`;
+			} else if (val.hasOwnProperty('unhotkey')) {
+				$str += `Unhotkey=${val.unhotkey}\n`;
+			}
+
+		}
+
+		return $str;
 
 	}
 
