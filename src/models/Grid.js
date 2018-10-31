@@ -208,7 +208,7 @@ export default class Grid {
 
 			// create xy string
 			let xy = val.button_pos[0] + '' + val.button_pos[1];
-			
+
 			// skip further processing if there is no hotkey set for position xy
 			if (this.grid[xy].hotkey === undefined) {
 				return;
@@ -217,40 +217,40 @@ export default class Grid {
 			}
 
 			// add everything need to provided string
-			$str += `// ${val.name}\n`;
-			
+			$str += `// ${val.name}\r\n`;
+
 			if (typeof val.id == 'object') {
-				
+
 				val.id.forEach(id => {
-					$str += `[${id}]\n`;
+					$str += `[${id}]\r\n`;
 					_generateHotkeyContent(val);
 				});
 
 			} else {
 
-				$str += `[${val.id}]\n`;
+				$str += `[${val.id}]\r\n`;
 				_generateHotkeyContent(val)
-			
+
 			}
 
-			$str += `\n`;
+			$str += `\r\n`;
 
 		});
 
 		function _generateHotkeyContent(val) {
 
-			$str += `Hotkey=${val.hotkey}\n`;
-			$str += `Tip=${val.name} (|cffffcc00${val.hotkey}|r)\n`;
+			$str += `Hotkey=${val.hotkey}\r\n`;
+			$str += `Tip=${val.name} (|cffffcc00${val.hotkey}|r)\r\n`;
 
 			// Researchhotkey = Hotkey for heroes only
 			if ($type === 'hero') {
-				$str += `Researchhotkey=${val.hotkey}\n`
+				$str += `Researchhotkey=${val.hotkey}\r\n`
 			}
-			
+
 			if (val.type == 'toggle') {
-				$str += `Unhotkey=${val.hotkey}\n`;
+				$str += `Unhotkey=${val.hotkey}\r\n`;
 			} else if (val.hasOwnProperty('unhotkey')) {
-				$str += `Unhotkey=${val.unhotkey}\n`;
+				$str += `Unhotkey=${val.unhotkey}\r\n`;
 			}
 
 		}
