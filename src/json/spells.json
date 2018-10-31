@@ -76,5 +76,35 @@
       2
     ],
     "race": "nightelf"
+  },
+  {
+    "name": "Replenish Mana and Life",
+    "id": "Ambt",
+    "type": "active",
+    "button_pos": [
+      0,
+      2
+    ],
+    "race": "nightelf"
+  },
+  {
+    "name": "Battle Stations",
+    "id": "Abtl",
+    "type": "active",
+    "button_pos": [
+      0,
+      2
+    ],
+    "race": "orc"
+  },
+  {
+    "name": "Stand Down",
+    "id": "Astd",
+    "type": "active",
+    "button_pos": [
+      1,
+      2
+    ],
+    "race": "orc"
   }
 ]
