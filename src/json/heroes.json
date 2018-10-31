@@ -1,1632 +1,1688 @@
 [
-   {
-      "name":"Blood Mage",
-      "id":"Hblm",
-      "race":"human",
-      "spells":[
-         {
-            "name":"Siphon Mana",
-            "id":"AHdr",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Flame Strike",
-            "id":"AHfs",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Banish",
-            "id":"AHbn",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Summon Phoenix",
-            "id":"AHpx",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+  {
+    "name": "Blood Mage",
+    "id": "Hblm",
+    "race": "human",
+    "spells": [
+      {
+        "name": "Siphon Mana",
+        "id": "AHdr",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Flame Strike",
+        "id": "AHfs",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Banish",
+        "id": "AHbn",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Summon Phoenix",
+        "id": "AHpx",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Archmage",
-      "id":"Hamg",
-      "race":"human",
-      "spells":[
-         {
-            "name":"Blizzard",
-            "id":"AHbz",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Summon Water Elemental",
-            "id":"AHwe",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Brilliance Aura",
-            "id":"AHab",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Mass Teleport",
-            "id":"AHmt",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Archmage",
+    "id": "Hamg",
+    "race": "human",
+    "spells": [
+      {
+        "name": "Blizzard",
+        "id": "AHbz",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Summon Water Elemental",
+        "id": "AHwe",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Brilliance Aura",
+        "id": "AHab",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Mass Teleport",
+        "id": "AHmt",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Mountain King",
-      "id":"Hmkg",
-      "race":"human",
-      "spells":[
-         {
-            "name":"Storm Bolt",
-            "id":"AHtb",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Thunder Clap",
-            "id":"AHtc",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Bash",
-            "id":"AHbh",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Avatar",
-            "id":"AHav",
-            "type":"toggle",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Mountain King",
+    "id": "Hmkg",
+    "race": "human",
+    "spells": [
+      {
+        "name": "Storm Bolt",
+        "id": "AHtb",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Thunder Clap",
+        "id": "AHtc",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Bash",
+        "id": "AHbh",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Avatar",
+        "id": "AHav",
+        "type": "toggle",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Paladin",
-      "id":"Hpal",
-      "race":"human",
-      "spells":[
-         {
-            "name":"Holy Light",
-            "id":"AHhb",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Divine Shield",
-            "id":"AHds",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Devotion Aura",
-            "id":"AHad",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Resurrection",
-            "id":"AHre",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Paladin",
+    "id": "Hpal",
+    "race": "human",
+    "spells": [
+      {
+        "name": "Holy Light",
+        "id": "AHhb",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Divine Shield",
+        "id": "AHds",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Devotion Aura",
+        "id": "AHad",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Resurrection",
+        "id": "AHre",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Blademaster",
-      "id":"Obla",
-      "race":"orc",
-      "spells":[
-         {
-            "name":"Wind Walk",
-            "id":"AOwk",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Critical Strike",
-            "id":"AOcr",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Mirror Image",
-            "id":"AOmi",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Bladestorm",
-            "id":"AOww",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Blademaster",
+    "id": "Obla",
+    "race": "orc",
+    "spells": [
+      {
+        "name": "Wind Walk",
+        "id": "AOwk",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Critical Strike",
+        "id": "AOcr",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Mirror Image",
+        "id": "AOmi",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Bladestorm",
+        "id": "AOww",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Far Seer",
-      "id":"Ofar",
-      "race":"orc",
-      "spells":[
-         {
-            "name":"Chain Lightning",
-            "id":"AOcl",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Far Sight",
-            "id":"AOfs",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Feral Spirit",
-            "id":"AOsf",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Earthquake",
-            "id":"AOeq",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Far Seer",
+    "id": "Ofar",
+    "race": "orc",
+    "spells": [
+      {
+        "name": "Chain Lightning",
+        "id": "AOcl",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Far Sight",
+        "id": "AOfs",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Feral Spirit",
+        "id": "AOsf",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Earthquake",
+        "id": "AOeq",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Shadow Hunter",
-      "id":"Oshd",
-      "race":"orc",
-      "spells":[
-         {
-            "name":"Healing Wave",
-            "id":"AOhw",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Serpent Ward",
-            "id":"AOsw",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Hex",
-            "id":"AOhx",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Big Bad Voodoo",
-            "id":"AOvd",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Shadow Hunter",
+    "id": "Oshd",
+    "race": "orc",
+    "spells": [
+      {
+        "name": "Healing Wave",
+        "id": "AOhw",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Serpent Ward",
+        "id": "AOsw",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Hex",
+        "id": "AOhx",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Big Bad Voodoo",
+        "id": "AOvd",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Tauren Chieftain",
-      "id":"Otch",
-      "race":"orc",
-      "spells":[
-         {
-            "name":"Shockwave",
-            "id":"AOsh",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Endurance Aura",
-            "id":"AOae",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"War Stomp",
-            "id":"AOws",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Reincarnation",
-            "id":"AOre",
-            "type":"passive",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Tauren Chieftain",
+    "id": "Otch",
+    "race": "orc",
+    "spells": [
+      {
+        "name": "Shockwave",
+        "id": "AOsh",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Endurance Aura",
+        "id": "AOae",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "War Stomp",
+        "id": "AOws",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Reincarnation",
+        "id": "AOre",
+        "type": "passive",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Demon Hunter",
-      "id":"Edem",
-      "race":"nightelf",
-      "spells":[
-         {
-            "name":"Mana Burn",
-            "id":"AEmb",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Immolation",
-            "id":"AEim",
-            "type":"toggle",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Evasion",
-            "id":"AEev",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Metamorphosis",
-            "id":"AEme",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Demon Hunter",
+    "id": "Edem",
+    "race": "nightelf",
+    "spells": [
+      {
+        "name": "Mana Burn",
+        "id": "AEmb",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Immolation",
+        "id": "AEim",
+        "type": "toggle",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Evasion",
+        "id": "AEev",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Metamorphosis",
+        "id": "AEme",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Keeper of the Grove",
-      "id":"Ekee",
-      "race":"nightelf",
-      "spells":[
-         {
-            "name":"Entangling Roots",
-            "id":"AEer",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Force of Nature",
-            "id":"AEfn",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Thorns Aura",
-            "id":"AEah",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Tranquility",
-            "id":"AEtq",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Keeper of the Grove",
+    "id": "Ekee",
+    "race": "nightelf",
+    "spells": [
+      {
+        "name": "Entangling Roots",
+        "id": "AEer",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Force of Nature",
+        "id": "AEfn",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Thorns Aura",
+        "id": "AEah",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Tranquility",
+        "id": "AEtq",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Priestess of the Moon",
-      "id":"Emoo",
-      "race":"nightelf",
-      "spells":[
-         {
-            "name":"Scout",
-            "id":"AEst",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Searing Arrows",
-            "id":"AHfa",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Trueshot Aura",
-            "id":"AEar",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Starfall",
-            "id":"AEsf",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Priestess of the Moon",
+    "id": "Emoo",
+    "race": "nightelf",
+    "spells": [
+      {
+        "name": "Scout",
+        "id": "AEst",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Searing Arrows",
+        "id": "AHfa",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Trueshot Aura",
+        "id": "AEar",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Starfall",
+        "id": "AEsf",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Warden",
-      "id":"Ewar",
-      "race":"nightelf",
-      "summonsCount":1,
-      "spells":[
-         {
-            "name":"Blink",
-            "id":"AEbl",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
+    ]
+  },
+  {
+    "name": "Warden",
+    "id": "Ewar",
+    "race": "nightelf",
+    "summonsCount": 1,
+    "spells": [
+      {
+        "name": "Blink",
+        "id": "AEbl",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Fan of Knives",
+        "id": "AEfk",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Shadow Strike",
+        "id": "AEsh",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Avatar of Vengeance",
+        "id": "AEsv",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
+      {
+        "name": "Vengeance",
+        "spellsCount": 1,
+        "spells": [
+          {
+            "name": "Spirit of Vengeance",
+            "id": "Avng",
+            "type": "active",
+            "button_pos": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Crypt Lord",
+    "id": "Ucrl",
+    "race": "undead",
+    "summonsCount": 1,
+    "spells": [
+      {
+        "name": "Impale",
+        "id": "AUim",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Spiked Carapace",
+        "id": "AUts",
+        "type": "passive",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Carrion Beetles",
+        "id": "AUcb",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Locust Swarm",
+        "id": "AUls",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
+      {
+        "name": "Scarab",
+        "spellsCount": 1,
+        "spells": [
+          {
+            "name": "Burrow",
+            "id": [
+              "Abu1",
+              "Abu2",
+              "Abu3"
             ],
-            "research_button_pos":[
-               1,
-               0
+            "type": "toggle",
+            "button_pos": [
+              3,
+              2
             ]
-         },
-         {
-            "name":"Fan of Knives",
-            "id":"AEfk",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Shadow Strike",
-            "id":"AEsh",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Avatar of Vengeance",
-            "id":"AEsv",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
-         {
-            "name":"Vengeance",
-            "spellsCount":1,
-            "spells":[
-               {
-                  "name":"Spirit of Vengeance",
-                  "id":"Avng",
-                  "type":"active",
-                  "button_pos":[
-                     0,
-                     2
-                  ]
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "name":"Crypt Lord",
-      "id":"Ucrl",
-      "race":"undead",
-      "summonsCount":1,
-      "spells":[
-         {
-            "name":"Impale",
-            "id":"AUim",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Spiked Carapace",
-            "id":"AUts",
-            "type":"passive",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Carrion Beetles",
-            "id":"AUcb",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Locust Swarm",
-            "id":"AUls",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
-         {
-            "name":"Scarab",
-            "spellsCount":1,
-            "spells":[
-               {
-                  "name":"Burrow",
-                  "id":[
-                     "Abu1",
-                     "Abu2",
-                     "Abu3"
-                  ],
-                  "type":"toggle",
-                  "button_pos":[
-                     3,
-                     2
-                  ]
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "name":"Death Knight",
-      "id":"Udea",
-      "race":"undead",
-      "spells":[
-         {
-            "name":"Death Coil",
-            "id":"AUdc",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Unholy Aura",
-            "id":"AUau",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Death Pact",
-            "id":"AUdp",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Animate Dead",
-            "id":"AUan",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Death Knight",
+    "id": "Udea",
+    "race": "undead",
+    "spells": [
+      {
+        "name": "Death Coil",
+        "id": "AUdc",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Unholy Aura",
+        "id": "AUau",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Death Pact",
+        "id": "AUdp",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Animate Dead",
+        "id": "AUan",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Dreadlord",
-      "id":"Udre",
-      "race":"undead",
-      "spells":[
-         {
-            "name":"Carrion Swarm",
-            "id":"AUcs",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Sleep",
-            "id":"AUsl",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Vampiric Aura",
-            "id":"AUav",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Inferno",
-            "id":"AUin",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Dreadlord",
+    "id": "Udre",
+    "race": "undead",
+    "spells": [
+      {
+        "name": "Carrion Swarm",
+        "id": "AUcs",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Sleep",
+        "id": "AUsl",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Vampiric Aura",
+        "id": "AUav",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Inferno",
+        "id": "AUin",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Lich",
-      "id":"Ulic",
-      "race":"undead",
-      "spells":[
-         {
-            "name":"Frost Nova",
-            "id":"AUfn",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Frost Armor",
-            "id":"AUfu",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Dark Ritual",
-            "id":"AUdr",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Death and Decay",
-            "id":"AUdd",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Lich",
+    "id": "Ulic",
+    "race": "undead",
+    "spells": [
+      {
+        "name": "Frost Nova",
+        "id": "AUfn",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Frost Armor",
+        "id": "AUfu",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Dark Ritual",
+        "id": "AUdr",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Death and Decay",
+        "id": "AUdd",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Sea Witch",
-      "id":"Nngs",
-      "race":"neutral",
-      "spells":[
-         {
-            "name":"Mana Shield",
-            "id":"ANms",
-            "type":"toggle",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Forked Lightning",
-            "id":"ANfl",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Frost Arrows",
-            "id":"ANfa",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Tornado",
-            "id":"ANto",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Sea Witch",
+    "id": "Nngs",
+    "race": "neutral",
+    "spells": [
+      {
+        "name": "Mana Shield",
+        "id": "ANms",
+        "type": "toggle",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Forked Lightning",
+        "id": "ANfl",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Frost Arrows",
+        "id": "ANfa",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Tornado",
+        "id": "ANto",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Pit Lord",
-      "id":"Nplh",
-      "race":"neutral",
-      "spells":[
-         {
-            "name":"Howl of Terror",
-            "id":"ANht",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
+    ]
+  },
+  {
+    "name": "Pit Lord",
+    "id": "Nplh",
+    "race": "neutral",
+    "spells": [
+      {
+        "name": "Howl of Terror",
+        "id": "ANht",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Rain of Fire",
+        "id": "ANrf",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Cleaving Attack",
+        "id": "ANca",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Doom",
+        "id": "ANdo",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
+      {
+        "name": "Doom Guard",
+        "spellsCount": 4,
+        "spells": [
+          {
+            "name": "Dispel Magic",
+            "id": "Adsm",
+            "type": "active",
+            "button_pos": [
+              0,
+              2
             ]
-         },
-         {
-            "name":"Rain of Fire",
-            "id":"ANrf",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
+          },
+          {
+            "name": "War Stomp",
+            "id": "Awrs",
+            "type": "active",
+            "button_pos": [
+              1,
+              2
             ]
-         },
-         {
-            "name":"Cleaving Attack",
-            "id":"ANca",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
+          },
+          {
+            "name": "Cripple",
+            "id": "ACcr",
+            "type": "active",
+            "button_pos": [
+              2,
+              2
             ]
-         },
-         {
-            "name":"Doom",
-            "id":"ANdo",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
+          },
+          {
+            "name": "Rain of Fire",
+            "id": "ACrf",
+            "type": "active",
+            "button_pos": [
+              3,
+              2
             ]
-         }
-      ],
-      "summons":[
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pandaren Brewmaster",
+    "id": "Npbm",
+    "race": "neutral",
+    "summonsCount": 3,
+    "spells": [
+      {
+        "name": "Breath of Fire",
+        "id": "ANbf",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Drunken Brawler",
+        "id": "ANdb",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Drunken Haze",
+        "id": "ANdh",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Storm Earth and Fire",
+        "id": "ANef",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
+      {
+        "name": "Wind Panda",
+        "spellsCount": 3,
+        "spells": [
+          {
+            "name": "Wind Walk",
+            "id": "ANwk",
+            "type": "active",
+            "button_pos": [
+              2,
+              2
+            ]
+          },
+          {
+            "name": "Cyclone",
+            "id": "ACcy",
+            "type": "active",
+            "button_pos": [
+              1,
+              2
+            ]
+          },
+          {
+            "name": "Dispel Magic",
+            "id": "Adsm",
+            "type": "active",
+            "button_pos": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Earth Panda",
+        "spellsCount": 1,
+        "spells": [
+          {
+            "name": "Taunt",
+            "id": "ANta",
+            "type": "active",
+            "button_pos": [
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Beastmaster",
+    "id": "Nbst",
+    "race": "neutral",
+    "summonsCount": 1,
+    "spells": [
+      {
+        "name": "Summon Bear",
+        "id": "ANsg",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Summon Quilbeast",
+        "id": "ANsq",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Summon Hawk",
+        "id": "ANsw",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Stampede",
+        "id": "ANst",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
+      {
+        "name": "Bear",
+        "spellsCount": 1,
+        "spells": [
+          {
+            "name": "Blink",
+            "id": "ANbl",
+            "type": "active",
+            "button_pos": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Quilbeast",
+        "spellsCount": 1,
+        "spells": [
+          {
+            "name": "Frenzy",
+            "id": "Afzy",
+            "type": "active",
+            "button_pos": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dark Ranger",
+    "id": "Nbrn",
+    "race": "neutral",
+    "spells": [
+      {
+        "name": "Black Arrow",
+        "id": "ANba",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Silence",
+        "id": "ANsi",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Life Drain",
+        "id": "ANdr",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Charm",
+        "id": "ANch",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Pandaren Brewmaster",
-      "id":"Npbm",
-      "race":"neutral",
-      "summonsCount":3,
-      "spells":[
-         {
-            "name":"Breath of Fire",
-            "id":"ANbf",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
+    ]
+  },
+  {
+    "name": "Tinker",
+    "id": [
+      "Ntin",
+      "Nrob"
+    ],
+    "race": "neutral",
+    "summonsCount": 1,
+    "spells": [
+      {
+        "name": "Pocket Factory",
+        "id": [
+          "ANsy",
+          "ANs1",
+          "ANs2",
+          "ANs3"
+        ],
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Cluster Rockets",
+        "id": [
+          "ANcs",
+          "ANc1",
+          "ANc2",
+          "ANc3"
+        ],
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Engineering Upgrade",
+        "id": "ANeg",
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Robo-Goblin",
+        "id": [
+          "ANrg",
+          "ANg1",
+          "ANg2",
+          "ANg3"
+        ],
+        "type": "toggle",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
+      {
+        "name": "Clockwerk Goblin",
+        "spellsCount": 1,
+        "spells": [
+          {
+            "name": "Kaboom!",
+            "id": [
+              "Asdg",
+              "Asd2",
+              "Asd3"
             ],
-            "research_button_pos":[
-               0,
-               0
+            "type": "active",
+            "button_pos": [
+              0,
+              2
             ]
-         },
-         {
-            "name":"Drunken Brawler",
-            "id":"ANdb",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Drunken Haze",
-            "id":"ANdh",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Storm Earth and Fire",
-            "id":"ANef",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
-         {
-            "name":"Wind Panda",
-            "spellsCount":3,
-            "spells":[
-               {
-                  "name":"Wind Walk",
-                  "id":"ANwk",
-                  "type":"active",
-                  "button_pos":[
-                     2,
-                     2
-                  ]
-               },
-               {
-                  "name":"Cyclone",
-                  "id":"ACcy",
-                  "type":"active",
-                  "button_pos":[
-                     1,
-                     2
-                  ]
-               },
-               {
-                  "name":"Dispel Magic",
-                  "id":"Adsm",
-                  "type":"active",
-                  "button_pos":[
-                     0,
-                     2
-                  ]
-               }
-            ]
-         },
-         {
-            "name":"Earth Panda",
-            "spellsCount":1,
-            "spells":[
-               {
-                  "name":"Taunt",
-                  "id":"ANta",
-                  "type":"active",
-                  "button_pos":[
-                     1,
-                     2
-                  ]
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "name":"Beastmaster",
-      "id":"Nbst",
-      "race":"neutral",
-      "summonsCount":1,
-      "spells":[
-         {
-            "name":"Summon Bear",
-            "id":"ANsg",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Summon Quilbeast",
-            "id":"ANsq",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Summon Hawk",
-            "id":"ANsw",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Stampede",
-            "id":"ANst",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
-         {
-            "name":"Bear",
-            "spellsCount":1,
-            "spells":[
-               {
-                  "name":"Blink",
-                  "id":"ANbl",
-                  "type":"active",
-                  "button_pos":[
-                     0,
-                     2
-                  ]
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "name":"Dark Ranger",
-      "id":"Nbrn",
-      "race":"neutral",
-      "spells":[
-         {
-            "name":"Black Arrow",
-            "id":"ANba",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Silence",
-            "id":"ANsi",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Life Drain",
-            "id":"ANdr",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Charm",
-            "id":"ANch",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alchemist",
+    "id": [
+      "Nalc",
+      "Nalm",
+      "Nal2",
+      "Nal3"
+    ],
+    "race": "neutral",
+    "spells": [
+      {
+        "name": "Healing Spray",
+        "id": "ANhs",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Acid Bomb",
+        "id": "ANab",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Chemical Rage",
+        "id": "ANcr",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Transmute",
+        "id": "ANtm",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Tinker",
-      "id":[
-         "Ntin",
-         "Nrob"
-      ],
-      "race":"neutral",
-      "summonsCount":1,
-      "spells":[
-         {
-            "name":"Pocket Factory",
-            "id":[
-               "ANsy",
-               "ANs1",
-               "ANs2",
-               "ANs3"
-            ],
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Cluster Rockets",
-            "id":[
-               "ANcs",
-               "ANc1",
-               "ANc2",
-               "ANc3"
-            ],
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Engineering Upgrade",
-            "id":"ANeg",
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Robo-Goblin",
-            "id":[
-               "ANrg",
-               "ANg1",
-               "ANg2",
-               "ANg3"
-            ],
-            "type":"toggle",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
-         {
-            "name":"Clockwerk Goblin",
-            "spellsCount":1,
-            "spells":[
-               {
-                  "name":"Kaboom!",
-                  "id":[
-                     "Asdg",
-                     "Asd2",
-                     "Asd3"
-                  ],
-                  "type":"active",
-                  "button_pos":[
-                     0,
-                     2
-                  ]
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "name":"Alchemist",
-      "id":[
-         "Nalc",
-         "Nalm",
-         "Nal2",
-         "Nal3"
-      ],
-      "race":"neutral",
-      "spells":[
-         {
-            "name":"Healing Spray",
-            "id":"ANhs",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Acid Bomb",
-            "id":"ANab",
-            "type":"active",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Chemical Rage",
-            "id":"ANcr",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Transmute",
-            "id":"ANtm",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
+    ]
+  },
+  {
+    "name": "Fire Lord",
+    "id": "Nfir",
+    "race": "neutral",
+    "spells": [
+      {
+        "name": "Incinerate",
+        "id": [
+          "ANic",
+          "ANia"
+        ],
+        "type": "passive",
+        "button_pos": [
+          2,
+          2
+        ],
+        "research_button_pos": [
+          2,
+          0
+        ]
+      },
+      {
+        "name": "Soul Burn",
+        "id": "ANso",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ],
+        "research_button_pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Summon Lava Spawn",
+        "id": "ANlm",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ],
+        "research_button_pos": [
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Volcano",
+        "id": "ANvc",
+        "type": "active",
+        "button_pos": [
+          3,
+          2
+        ],
+        "research_button_pos": [
+          3,
+          0
+        ]
+      }
+    ],
+    "summons": [
 
-      ]
-   },
-   {
-      "name":"Fire Lord",
-      "id":"Nfir",
-      "race":"neutral",
-      "spells":[
-         {
-            "name":"Incinerate",
-            "id":[
-               "ANic",
-               "ANia"
-            ],
-            "type":"passive",
-            "button_pos":[
-               2,
-               2
-            ],
-            "research_button_pos":[
-               2,
-               0
-            ]
-         },
-         {
-            "name":"Soul Burn",
-            "id":"ANso",
-            "type":"active",
-            "button_pos":[
-               0,
-               2
-            ],
-            "research_button_pos":[
-               0,
-               0
-            ]
-         },
-         {
-            "name":"Summon Lava Spawn",
-            "id":"ANlm",
-            "type":"active",
-            "button_pos":[
-               1,
-               2
-            ],
-            "research_button_pos":[
-               1,
-               0
-            ]
-         },
-         {
-            "name":"Volcano",
-            "id":"ANvc",
-            "type":"active",
-            "button_pos":[
-               3,
-               2
-            ],
-            "research_button_pos":[
-               3,
-               0
-            ]
-         }
-      ],
-      "summons":[
-
-      ]
-   }
+    ]
+  }
 ]
