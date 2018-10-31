@@ -12,10 +12,10 @@ console.log("shared commands:", shared_commands);
 
 const dlButton = document.getElementById('dl-btn');
 const normalGridOptions = {
-  containerId: 'main',
-  type: 'normal',
-  // disabledTiles: ['11','21'],
-  actionEl: dlButton
+	containerId: 'main',
+	type: 'normal',
+	// disabledTiles: ['11','21'],
+	actionEl: dlButton
 };
 const normalGrid = new Grid(normalGridOptions);
 
@@ -24,7 +24,7 @@ normalGrid.detectClicks();
 
 // Start Hotkey Generation Button
 dlButton.addEventListener('click', () => {
-  let checkedBoxes = [...document.querySelectorAll('input[type=checkbox]:checked')].map(checkbox => checkbox.value);
+	let checkedBoxes = [...document.querySelectorAll('input[type=checkbox]:checked')].map(checkbox => checkbox.value);
 	normalGrid.generateCustomKeys(heroes, units, spells, shared_commands, checkedBoxes);
 });
 
