@@ -942,5 +942,48 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Goblin Zeppelin",
+    "id": "nzep",
+    "race": "neutral",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Load",
+        "id": "Aloa",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Unload All",
+        "id": "Adro",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Goblin Sapper",
+    "id": "ngsp",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Kaboom!",
+        "id": "Asds",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
   }
 ]
