@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = {
 	entry: './src/app.js',
@@ -14,7 +15,11 @@ module.exports = {
 			use: [{
 				loader: 'style-loader'
 			}, {
-				loader: 'css-loader'
+				loader: 'css-loader',
+				options: {
+					// production
+					minimize: true
+				}
 			}, {
 				loader: 'sass-loader'
 			}]
@@ -30,7 +35,7 @@ module.exports = {
 		}, {
 			test: /\.(png|jpg|gif)$/,
 			use: [{
-				loader: 'url-loader'
+				loader: 'file-loader'
 			}]
 		}]
 	},
@@ -39,6 +44,8 @@ module.exports = {
 			template: './src/index.html',
 			favicon: './src/assets/favicon.ico',
 			hash: true
-		})
+		}),
+		// production
+		new MinifyPlugin()
 	]
 };
