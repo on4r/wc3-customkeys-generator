@@ -141,14 +141,14 @@ body {
 	display: grid;
 	justify-content: center;
 
-  label {
-    display: inline-flex;
-  }
+	label {
+		display: inline-flex;
+	}
 
 	#dl-btn {
 		border: 3px solid black;
 		padding: 15px;
-    margin-top: 20px;
+		margin-top: 20px;
 		background-color: #efd044;
 		color: black;
 		cursor: pointer;
@@ -165,6 +165,20 @@ body {
 
 		&:hover:enabled {
 			border-color: red;
+			color: red;
+		}
+	}
+}
+
+#email {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	text-align: right;
+	line-height: 1.6;
+	a {
+		color: black;
+		&:hover {
 			color: red;
 		}
 	}
