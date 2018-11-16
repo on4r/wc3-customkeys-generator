@@ -1379,5 +1379,56 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Ice Revenant",
+    "id": "nrvi",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Frost Nova",
+        "id": "ACfn",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fel Stalker",
+    "id": "nfel",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Mana Burn",
+        "id": "Ambb",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rock Golem",
+    "id": "ngst",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Hurl Boulder",
+        "id": "ACtb",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
   }
 ]
