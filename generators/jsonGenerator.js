@@ -82,19 +82,6 @@ const createUnitQuestions = [
 		}
 	},
 	{
-		name: 'button_pos',
-		type: 'input',
-		message: 'Button Position (xy):',
-		filter: pos => {
-			if (pos.lenght > 2 || isNaN(Number(pos)) ) return '';
-			return pos.split('').map(val => Number(val));
-		},
-		validate: pos => {
-			if (pos.length) return true;
-			else return 'Please enter a button position.';
-		}
-	},
-	{
 		name: 'race',
 		type: 'list',
 		message: 'Race:',
@@ -284,8 +271,6 @@ class Unit {
 			this.name = unit.name;
 			this.id = unit.id;
 			this.race = unit.race;
-			if (unit.button_pos.length)
-				this.button_pos = unit.button_pos;
 
 			return unit;
 
