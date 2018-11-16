@@ -985,5 +985,399 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Forest Troll High Priest",
+    "id": "nfsh",
+    "race": "neutral",
+    "spellsCount": 3,
+    "spells": [
+      {
+        "name": "Heal",
+        "id": "Anh2",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Abolish Magic",
+        "id": "ACd2",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Inner Fire",
+        "id": "ACif",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Forest Troll Shadow Priest",
+    "id": "nfsp",
+    "race": "neutral",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Heal",
+        "id": "Anh1",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Abolish Magic",
+        "id": "ACdm",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ice Troll Trapper",
+    "id": "nitt",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Ensnare",
+        "id": "ACen",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mud Golem",
+    "id": "ngrk",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Slow",
+        "id": "ACsw",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Furbolg Shaman",
+    "id": "nfrs",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Rejuvenation",
+        "id": "ACr2",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Satyr Shadowdancer",
+    "id": "nsts",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Curse",
+        "id": "ACcs",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Draenei Darkslayer",
+    "id": "ACim",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Immolation",
+        "id": "ACim",
+        "type": "toggle",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Barbed Arachnathid",
+    "id": "nanm",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Burrow",
+        "id": "Abu5",
+        "type": "toggle",
+        "button_pos": [
+          3,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Thunder Lizard",
+    "id": "nthl",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Slam",
+        "id": "ACt2",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gnoll Warden",
+    "id": "ngnw",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Purge",
+        "id": "ACpu",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Burning Archer",
+    "id": "nskf",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Searing Arrows",
+        "id": "ACsa",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Razormane Medicine Man",
+    "id": "nrzm",
+    "race": "neutral",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Healing Ward",
+        "id": "AChw",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Feral Spirit",
+        "id": "ACs9",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Satyr Soulstealer",
+    "id": "nstl",
+    "race": "neutral",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Mana Burn",
+        "id": "Ambd",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Raise Dead",
+        "id": "ACrd",
+        "type": "active",
+        "button_pos": [
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Murloc Flesheater",
+    "id": "nmfs",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Cannibalize",
+        "id": "ACcn",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Voidwalker",
+    "id": "nvdw",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Cold Arrows",
+        "id": "ACcw",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Harpy Windwitch",
+    "id": "nhrw",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Faerie Fire",
+        "id": "ACff",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ogre Magi",
+    "id": "nomg",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Bloodlust",
+        "id": "ACbb",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Makrura Deepseer",
+    "id": "nlds",
+    "race": "neutral",
+    "spellsCount": 2,
+    "spells": [
+      {
+        "name": "Entangling Roots",
+        "id": "Aenw",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "name": "Summon Prawns",
+        "id": "Aslp",
+        "type": "active",
+        "button_pos": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Frost Revenant",
+    "id": "nrvs",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Blizzard",
+        "id": "ACbz",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Black Dragon",
+    "id": "nbwm",
+    "race": "neutral",
+    "spellsCount": 1,
+    "spells": [
+      {
+        "name": "Devour",
+        "id": "ACdv",
+        "type": "active",
+        "button_pos": [
+          0,
+          2
+        ]
+      }
+    ]
   }
 ]
