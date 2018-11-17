@@ -207,13 +207,21 @@ export default class Grid {
 		$arr.forEach(val => {
 
 			// create xy string
-			let xy = val.button_pos[0] + '' + val.button_pos[1];
+			let buttonPosXY = val.button_pos[0] + '' + val.button_pos[1];
 
 			// skip further processing if there is no hotkey set for position xy
-			if (this.grid[xy].hotkey === undefined) {
+			if (this.grid[buttonPosXY].hotkey === undefined) {
 				return;
 			} else {
-				val.hotkey = this.grid[xy].hotkey;
+				val.hotkey = this.grid[buttonPosXY].hotkey;
+			}
+
+			// If spell has "unbutton_pos" set
+			if ( val.hasOwnProperty('unbutton_pos') ) {
+				let unbuttonPosXY = val.unbutton_pos.toString().replace(',','');
+				if (this.grid[unbuttonPosXY].hotkey !== undefined) {
+					val.unhotkey = this.grid[unbuttonPosXY].hotkey;
+				}
 			}
 
 			// add everything need to provided string
@@ -251,6 +259,7 @@ export default class Grid {
 				$str += `Unhotkey=${val.hotkey}\r\n`;
 			} else if (val.hasOwnProperty('unhotkey')) {
 				$str += `Unhotkey=${val.unhotkey}\r\n`;
+				$str += `Untip=${val.unname} (|cffffcc00${val.unhotkey}|r)\r\n`;
 			}
 
 		}
