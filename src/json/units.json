@@ -883,7 +883,7 @@
     "name": "Obsidian Statue",
     "id": "uobs",
     "race": "undead",
-    "spellsCount": 2,
+    "spellsCount": 3,
     "spells": [
       {
         "name": "Essence of Blight",
@@ -900,6 +900,15 @@
         "type": "active",
         "button_pos": [
           1,
+          2
+        ]
+      },
+      {
+        "name": "Morph into Destroyer",
+        "id": "ubsp",
+        "type": "active",
+        "button_pos": [
+          3,
           2
         ]
       }
