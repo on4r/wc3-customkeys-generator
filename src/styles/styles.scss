@@ -48,7 +48,7 @@ body {
 
 		sup {
 			margin-left: 10px;
-			color: #a00808;
+			color: red;
 		}
 	}
 }
@@ -130,13 +130,13 @@ body {
 			@include user-select(none);
 
 			&.error {
-				color: #a00808;
+				color: red;
 				cursor: help;
 			}
 
 			&.active {
 				border-style: dashed;
-				border-color: #a00808;
+				border-color: red;
 			}
 		}
 	}
@@ -170,8 +170,8 @@ body {
 		}
 
 		&:hover:enabled {
-			border-color: #a00808;
-			color: #a00808;
+			border-color: red;
+			color: red;
 		}
 	}
 }
@@ -185,7 +185,7 @@ body {
 	a {
 		color: black;
 		&:hover {
-			color: #a00808;
+			color: red;
 		}
 	}
 }

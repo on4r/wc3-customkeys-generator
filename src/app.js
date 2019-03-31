@@ -3,8 +3,6 @@ import units from './json/units.json';
 import spells from './json/spells.json';
 import shared_commands from './json/shared_commands.json';
 import Grid from './models/Grid';
-import './styles/styles.scss';
-import './assets/logo.png';
 
 console.log("heroes:", heroes);
 console.log("units:", units);
