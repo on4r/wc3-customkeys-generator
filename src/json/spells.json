@@ -24,7 +24,7 @@
     "race": "nightelf"
   },
   {
-    "name": "Shadow Meld",
+    "name": "Shadowmeld",
     "id": "Ashm",
     "type": "active",
     "button_pos": [
@@ -92,5 +92,15 @@
       2
     ],
     "race": "orc"
+  },
+  {
+    "name": "Cloak of Shadows",
+    "id": "Alhm",
+    "type": "active",
+    "button_pos": [
+      2,
+      1
+    ],
+    "race": "neutral"
   }
 ]
