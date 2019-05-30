@@ -4,10 +4,7 @@ import spells from './json/spells.json';
 import shared_commands from './json/shared_commands.json';
 import Grid from './models/Grid';
 
-console.log("heroes:", heroes);
-console.log("units:", units);
-console.log("spells:", spells);
-console.log("shared commands:", shared_commands);
+console.warn("version:", __COMMIT_HASH__);
 
 const dlButton = document.getElementById('dl-btn');
 const normalGridOptions = {

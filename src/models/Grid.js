@@ -32,8 +32,6 @@ export default class Grid {
 			}
 		}
 
-		console.log("the grid:", this.grid);
-
 	}
 
 	createTile(x, y) {
@@ -93,7 +91,7 @@ export default class Grid {
 			this.grid[pos.x + '' + pos.y].el.firstChild.classList.add('active');
 
 			this._awaitHotkeyInput().then(hotkey => {
-				console.log(hotkey, pos);
+
 				hotkey = hotkey.toUpperCase();
 				this.grid[pos.x + '' + pos.y].hotkey = hotkey;
 				this.grid[pos.x + '' + pos.y].el.firstChild.innerText = hotkey;
@@ -198,7 +196,6 @@ export default class Grid {
 		document.body.appendChild(a);
 		a.click();
 		document.body.removeChild(a);
-		console.log(customKeysStr);
 
 	}
 
