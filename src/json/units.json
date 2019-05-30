@@ -855,16 +855,16 @@
         "id": "Arai",
         "type": "active",
         "button_pos": [
-          0,
+          1,
           2
         ]
       },
       {
-        "name": "Unholy Frenzy",
-        "id": "Auhf",
+        "name": "Incite Unholy Frenzy",
+        "id": "Auuf",
         "type": "active",
         "button_pos": [
-          1,
+          2,
           2
         ]
       },
@@ -873,7 +873,7 @@
         "id": "Acri",
         "type": "active",
         "button_pos": [
-          2,
+          0,
           2
         ]
       }
